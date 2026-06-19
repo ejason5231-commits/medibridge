@@ -1,0 +1,195 @@
+```html
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Consent & Service Disclaimer</title>
+
+    <style>
+        body {
+            font-family: "Pyidaungsu", "Myanmar Text", Arial, sans-serif;
+            background: #f4f7fb;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            color: #0d6efd;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #444;
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .notice {
+            background: #eef6ff;
+            border-left: 5px solid #0d6efd;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .consent-item {
+            margin: 15px 0;
+            padding: 12px;
+            border: 1px solid #e3e3e3;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+
+        .consent-item label {
+            cursor: pointer;
+            line-height: 1.8;
+        }
+
+        .final-consent {
+            margin-top: 25px;
+            padding: 15px;
+            background: #e8f7ea;
+            border: 1px solid #28a745;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 14px;
+            font-size: 16px;
+            background: #0d6efd;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background: #a0a0a0;
+            cursor: not-allowed;
+        }
+
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>တိုင်ပင်ဆွေးနွေးမှု မစတင်မီ ဝန်ဆောင်မှု အသုံးပြုခြင်းဆိုင်ရာ အသိပေးချက်များ</h1>
+    <h2>Patient Consent & Service Disclaimer</h2>
+
+    <div class="notice">
+        <strong>တိုင်ပင်ဆွေးနွေးမှု မစတင်မီ သိရှိသဘောတူရန်</strong><br><br>
+        ဤဝန်ဆောင်မှုသည် အွန်လိုင်းမှတဆင့် ကျန်းမာရေးဆိုင်ရာ
+        အကြံပြုဆွေးနွေးပေးသော Tele-Consultation Service ဖြစ်ပါသည်။
+        <br><br>
+        ဝန်ဆောင်မှုရယူခြင်းမပြုမီ အောက်ပါအချက်များကို ဖတ်ရှုပြီး
+        သဘောတူကြောင်း အတည်ပြုပေးပါရန် မေတ္တာရပ်ခံအပ်ပါသည်။
+    </div>
+
+    <div class="consent-item">
+        <label>
+            <input type="checkbox">
+            ကျွန်ုပ်ပေးအပ်သော အချက်အလက်များသည် မှန်ကန်ကြောင်း အတည်ပြုပါသည်။
+        </label>
+    </div>
+
+    <div class="consent-item">
+        <label>
+            <input type="checkbox">
+            ဤဝန်ဆောင်မှုသည် အွန်လိုင်းမှ အကြံပြုဆွေးနွေးပေးခြင်းဖြစ်ပြီး
+            လူကိုယ်တိုင် စစ်ဆေးကုသမှုကို အပြည့်အဝ အစားထိုးနိုင်မည်မဟုတ်ကြောင်း
+            နားလည်ပါသည်။
+        </label>
+    </div>
+
+    <div class="consent-item">
+        <label>
+            <input type="checkbox">
+            လိုအပ်ပါက ဆရာဝန်မှ ဆေးရုံ၊ ဆေးခန်း သို့မဟုတ်
+            အရေးပေါ်ကုသမှုဌာနသို့ သွားရောက်ပြသရန် အကြံပြုနိုင်ကြောင်း
+            နားလည်ပါသည်။
+        </label>
+    </div>
+
+    <div class="consent-item">
+        <label>
+            <input type="checkbox">
+            ကျွန်ုပ်၏ ကျန်းမာရေးအချက်အလက်များကို
+            တိုင်ပင်ဆွေးနွေးမှုနှင့် နောက်ဆက်တွဲစောင့်ကြည့်မှုများအတွက်သာ
+            အသုံးပြုမည်ဖြစ်ကြောင်း နားလည်ပါသည်။
+        </label>
+    </div>
+
+    <div class="consent-item">
+        <label>
+            <input type="checkbox">
+            ဆေးဝါးသုံးစွဲမှုနှင့် ပတ်သက်၍ နောက်ဆုံးဆုံးဖြတ်ချက်သည်
+            ကျွန်ုပ်ကိုယ်တိုင်၏ တာဝန်ဖြစ်ကြောင်း နားလည်ပါသည်။
+        </label>
+    </div>
+
+    <div class="consent-item">
+        <label>
+            <input type="checkbox">
+            ကျွန်ုပ်သည် ဤဝန်ဆောင်မှု၏ လုပ်ငန်းစဉ်များနှင့်
+            ကန့်သတ်ချက်များကို နားလည်သဘောတူပါသည်။
+        </label>
+    </div>
+
+    <div class="final-consent">
+        <label>
+            <input type="checkbox" id="agreeCheckbox">
+            ☑️ အထက်ပါအချက်များကို ဖတ်ရှုပြီး နားလည်သဘောတူပါသည်။
+        </label>
+    </div>
+
+    <button id="continueBtn" disabled>
+        Continue to Tele-Consultation
+    </button>
+
+    <div class="footer">
+        MediBridge Tele-Consultation Service
+    </div>
+
+</div>
+
+<script>
+    const agreeCheckbox = document.getElementById('agreeCheckbox');
+    const continueBtn = document.getElementById('continueBtn');
+
+    agreeCheckbox.addEventListener('change', function() {
+        continueBtn.disabled = !this.checked;
+    });
+
+    continueBtn.addEventListener('click', function() {
+        alert("Thank you. Your consent has been recorded.");
+        // Example redirect:
+        // window.location.href = "dashboard.html";
+    });
+</script>
+
+</body>
+</html>
+```
