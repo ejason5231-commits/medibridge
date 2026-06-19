@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="my">
 <head>
@@ -27,6 +28,7 @@
         color: #0d6efd;
         text-align: center;
         font-size: 1.6rem;
+        margin-bottom: 10px;
     }
 
     h2 {
@@ -80,6 +82,11 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover:not(:disabled) {
+        opacity: 0.9;
     }
 
     button:disabled {
@@ -100,7 +107,7 @@
 
 <div class="container">
 
-    <h1>တိုင်ပင်ဆွေးနွေးမှုမစတင်မှီ ဝန်ဆောင်မှုအသုံးပြုခြင်းဆိုင်ရာ အသိပေးချက်များ</h1>
+    <h1>တိုင်ပင်ဆွေးနွေးမှု မစတင်မီ ဝန်ဆောင်မှု အသုံးပြုခြင်းဆိုင်ရာ အသိပေးချက်များ</h1>
     <h2>Patient Consent & Service Disclaimer</h2>
 
     <div class="notice">
@@ -156,10 +163,7 @@ agreeCheckbox.addEventListener('change', function () {
 });
 
 continueBtn.addEventListener('click', function () {
-    alert('Thank you. Your consent has been recorded.');
-
-    // Redirect to next page
-    // window.location.href = "dashboard.html";
+    window.history.back();
 });
 </script>
 
